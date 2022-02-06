@@ -1,0 +1,23 @@
+﻿<header class="HeadBar header_section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <h2 >
+                @await Html.PartialAsync("_LoginPartial.cshtml")
+            </h2>
+            <ul class="navbar-nav ms-auto " style="align-items: center;">
+                <li class="nav-item">
+                    <img src="~/img/Weather/@(ViewBag.weatherImg + ViewBag.DayOrNight).png" class="weatherImg" />
+                </li>
+                <li class="nav-item">
+                    <h2 style="padding-top:10px" class="mainlink" >@ViewBag.weather°C</h2>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+
+
+
+
